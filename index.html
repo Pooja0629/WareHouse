@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Warehouse Demo Video</title>
+
 <style>
     body {
         margin: 0;
@@ -10,24 +11,28 @@
         background: #e6f4ff;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
         font-family: Arial, sans-serif;
     }
+
     h1 {
-        margin-bottom: 20px;
-        font-size: 28px;
+        margin: 25px 0;
+        font-size: 32px;
         color: #003366;
     }
+
     iframe {
-        width: 80%;
-        height: 70%;
+        width: 95vw;              /* Wider video */
+        height: 80vh;             /* Taller video */
+        max-width: 1400px;         /* Prevents over-growing on large screens */
         border: none;
-        border-radius: 15px;
-        box-shadow: 0 0 25px rgba(0,0,0,0.2);
+        border-radius: 20px;
+        box-shadow: 0 0 30px rgba(0,0,0,0.25);
     }
 </style>
+
 </head>
 <body>
 
